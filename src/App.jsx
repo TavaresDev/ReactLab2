@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Nav from './components/Nav';
+import Nav from './components/Nav/Nav';
 
 const App = () => {
   return (

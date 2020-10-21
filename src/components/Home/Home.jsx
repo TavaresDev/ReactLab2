@@ -1,21 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import FunFact from '../shared/FunFact/FunFact';
 import Header from '../shared/Header';
+import NavButton from '../shared/NavButton/NavButton';
 
 // You need to import your shared header...
 
 const Home = () => {
   return (
     <>
-      {/* <h1>Home</h1> */}
+   
       <Header title="Home" xsubTitle="Developer"/>
 
       {/* You need a link to your about page as a call to action */}
 
-      <Link to='/about'>
-							About
+      <FunFact title="Home" subTitle="Developer"/>
 
-      </Link>
+
+      {/* <NavButton linkTo="/about" label="Learn More "/> */}
+
+
     </>
   );
 }

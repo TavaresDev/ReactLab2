@@ -8,7 +8,7 @@ import {
 	Switch
 } from 'react-router-dom';
 import About from '../About';
-import Home from '../Home';
+import Home from '../Home/Home';
 
 import Styles from './styles';
 
