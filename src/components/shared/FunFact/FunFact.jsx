@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Card, Container } from 'react-bootstrap';
 import ActionButton from '../ActionButton/ActionButton';
-// import Styles from './styles';
-
-
+import NavButton from '../NavButton/NavButton';
+import Styles from './styles';
 
 const FunFact = () => {
 
@@ -27,20 +26,23 @@ const FunFact = () => {
 	}
 
 	return (
-		<Container>
+		<Styles.Container className="d-flex flex-column ">
 			<h1 className="m-5 text-center">Fun Facts </h1>
-			{/* <h4 className="m-5 text-center">{funFacts.length -1} Facts are true 1 is false </h4> */}
-
-
 
 			<Container className="d-flex ">
 				<ActionButton className='m-auto' label="Fun Fact" action={nextFact} />
 				<Card body className="m-auto">{index ? funFact : 'Four facts are true one is false ' }</Card>
 
 			</Container>
+			<Container className="mt-auto d-flex justify-content-center">
+				<h5 className='mr-3' >Check the answer In the About page</h5>
+				<NavButton className="" linkTo="/about" label="About "/>
+				
+
+			</Container>
 
 
-		</Container>
+		</Styles.Container>
 	);
 }
 

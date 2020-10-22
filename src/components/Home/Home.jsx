@@ -1,6 +1,6 @@
 import React from 'react';
 import FunFact from '../shared/FunFact/FunFact';
-import Header from '../shared/Header';
+import Header from '../shared/Header/Header';
 import NavButton from '../shared/NavButton/NavButton';
 
 // You need to import your shared header...
@@ -9,15 +9,14 @@ const Home = () => {
   return (
     <>
    
-      <Header title="Home" xsubTitle="Developer"/>
+      <Header title="Home" />
 
       {/* You need a link to your about page as a call to action */}
 
-      <FunFact title="Home" subTitle="Developer"/>
+      <FunFact title="Home" />
 
 
-      {/* <NavButton linkTo="/about" label="Learn More "/> */}
-
+      
 
     </>
   );
